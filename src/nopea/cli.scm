@@ -19,4 +19,6 @@
         ;; actions
         ("save"
          (save rest))
+        ("go"
+         (go (cadr rest)))
         (_ (exit 0))))))
