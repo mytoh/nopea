@@ -1,2 +1,4 @@
 
-mimicking `https://github.com/bufordtaylor/swiftcommandline`_
+mimicking `swiftcommandline`_
+
+.. _swiftcommandline: https://github.com/bufordtaylor/swiftcommandline
