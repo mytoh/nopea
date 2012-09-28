@@ -17,8 +17,10 @@
         (exit 0))
       (match (car  rest)
         ;; actions
-        ("save"
+        ((or "save" "s")
          (save rest))
-        ("go"
+        ((or "go" "g")
          (go (cadr rest)))
+        ((or "refs" "l" "ls" "list")
+         (refs))
         (_ (exit 0))))))

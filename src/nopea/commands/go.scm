@@ -16,7 +16,5 @@
                (dir (cadr found)))
       (if dir
         (display dir)
-        (print "no such reference")
-        )
-      )))
+        (print "no such reference")))))
 
