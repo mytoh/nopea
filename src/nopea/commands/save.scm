@@ -2,6 +2,7 @@
 
 (define-module nopea.commands.save
   (export save)
+  (use kirjasto.config)
   (use srfi-1)
   (use file.util))
 (select-module nopea.commands.save)
@@ -14,7 +15,7 @@
         (write lst out)))))
 
 (define (make-ref-list file name dir)
-  (let ((file-list (call-with-input-file file read)))
+  (let ((file-list (read-config file )))
     (if (any (lambda (e) (string=? (car e) name))
              file-list)
       file-list
