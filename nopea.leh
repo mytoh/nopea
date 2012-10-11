@@ -5,6 +5,6 @@
                                   "bin/nopea")
                  :wait #t)
    ;; library sources
-   (copy-directory* (build-path ( *lehti-cache-directory* ) "nopea/src")
-                    (build-path ( *lehti-dist-directory* ) "nopea/src"))
+   (copy-directory* (build-path ( *lehti-cache-directory* ) "nopea/lib")
+                    (build-path ( *lehti-dist-directory* ) "nopea/lib"))
 ))
