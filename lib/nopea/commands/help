@@ -1,3 +1,0 @@
-(define-module nopea.commands.help
-  )
-(select-module nopea.commands.help)

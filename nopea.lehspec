@@ -1,8 +1,12 @@
 
 (spec
   '(name "nopea")
-  '(files ("lib/**/*.scm"
-          "bin/*"
-          "*.lehspec"
-          "readme*"
-          "test/**/*.scm")))
+  '(files ("lib/nopea/cli.sls"
+           "lib/nopea/commands.sls"
+           "lib/nopea/commands/go.sls"
+           "lib/nopea/commands/refs.sls"
+           "lib/nopea/commands/save.sls"
+           "bin/nopea"
+           "nopea.lehspec"
+           "readme.rst"
+           )))
