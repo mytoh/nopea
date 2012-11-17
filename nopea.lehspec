@@ -1,12 +1,14 @@
 
 (spec
-  '(name "nopea")
-  '(files ("lib/nopea/cli.sls"
-           "lib/nopea/commands.sls"
-           "lib/nopea/commands/go.sls"
-           "lib/nopea/commands/refs.sls"
-           "lib/nopea/commands/save.sls"
-           "bin/nopea"
-           "nopea.lehspec"
-           "readme.rst"
-           )))
+  (name "nopea")
+  (description "")
+  (homepage "http://github.com/mytoh/nopea")
+  (files ("lib/nopea/cli.sls"
+          "lib/nopea/commands.sls"
+          "lib/nopea/commands/go.sls"
+          "lib/nopea/commands/refs.sls"
+          "lib/nopea/commands/save.sls"
+          "bin/nopea"
+          "nopea.lehspec"
+          "readme.rst"
+          )))
