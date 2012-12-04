@@ -6,9 +6,10 @@ mimicking `swiftcommandline`_
 
 description
 -----------
-``save name dir``
-``go name``
-``list, refs``
+
+| ``save name dir``
+| ``go name``
+| ``list, refs``
 
 synopsis
 --------
