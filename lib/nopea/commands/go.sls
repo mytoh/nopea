@@ -3,7 +3,8 @@
   (export
     go)
   (import
-    (rnrs)
+    (except (rnrs)
+            find)  
     (only (srfi :1)
           find)
     (loitsu file))
