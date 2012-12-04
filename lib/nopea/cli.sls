@@ -2,8 +2,7 @@
 (library (nopea cli)
   (export runner)
   (import
-    (scheme base)
-    (scheme write)
+    (rnrs)
     (match)
     (nopea commands))
 

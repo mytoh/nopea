@@ -1,8 +1,7 @@
 #!/usr/bin/env nmosh
 
 (import
-  (scheme base)
-  (scheme process-context)
+  (rnrs)
   (prefix (nopea cli)
     cli.))
 

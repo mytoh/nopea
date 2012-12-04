@@ -3,9 +3,7 @@
   (export
     save)
   (import
-    (scheme base)
-    (scheme write)
-    (scheme file)
+    (rnrs)
     (only (srfi :1)
           any)
     (loitsu file)

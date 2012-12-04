@@ -3,8 +3,7 @@
   (export
     go)
   (import
-    (scheme base)
-    (scheme write)
+    (rnrs)
     (only (srfi :1)
           find)
     (loitsu file))

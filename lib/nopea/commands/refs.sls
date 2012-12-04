@@ -3,9 +3,7 @@
   (export
     refs)
   (import
-    (scheme base)
-    (scheme write)
-    (scheme file)
+    (rnrs)
     (srfi :48)
     (loitsu file))
 
