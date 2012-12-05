@@ -15,10 +15,6 @@
         ((or "go" "g")
          (go args))
         ((or "refs" "l" "ls" "list")
-         (refs))
-        )))
+         (refs))))
 
-
-
-
-  )
+    ))
