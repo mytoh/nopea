@@ -3,8 +3,9 @@
   (export
     go)
   (import
-    (except (rnrs)
-            find)  
+    (silta base)
+    (silta write)
+    (silta cxr)
     (only (srfi :1)
           find)
     (loitsu file))

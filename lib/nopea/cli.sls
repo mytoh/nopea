@@ -2,7 +2,7 @@
 (library (nopea cli)
   (export runner)
   (import
-    (rnrs)
+    (silta base)
     (match)
     (nopea commands))
 

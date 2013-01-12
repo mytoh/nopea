@@ -3,7 +3,7 @@
   (export
     refs)
   (import
-    (rnrs)
+    (silta base)
     (srfi :48)
     (loitsu file))
 

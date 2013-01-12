@@ -3,7 +3,10 @@
   (export
     save)
   (import
-    (rnrs)
+    (silta base)
+    (silta file)
+    (silta write)
+    (silta cxr)
     (only (srfi :1)
           any)
     (loitsu file)
