@@ -1,8 +1,9 @@
 
 (library (nopea cli)
-  (export runner)
+    (export runner)
   (import
     (silta base)
+    (silta write)
     (match)
     (nopea commands))
 
@@ -10,11 +11,11 @@
 
     (define (runner args)
       (match (cadr args)
-        ((or "save" "s")
-         (save args))
-        ((or "go" "g")
-         (go args))
-        ((or "refs" "l" "ls" "list")
-         (refs))))
+             ((or "save" "s")
+              (save args))
+             ((or "go" "g")
+              (go args))
+             ((or "refs" "l" "ls" "list")
+              (refs))))
 
     ))
