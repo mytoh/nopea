@@ -17,7 +17,7 @@
          (go args))
         ((or "list" "ls")
          (refs))
-        (else
-            (help))))
+        ("help"
+         (help))))
 
     ))
