@@ -11,11 +11,11 @@
 
     (define (runner args)
       (match-short-command (cadr args)
-                           ("save"
-                            (save args))
-                           ("go"
-                            (go args))
-                           ("ls"
-                            (refs))))
+        ("save"
+         (save args))
+        ("go"
+         (go args))
+        ((or "list" "ls")
+         (refs))))
 
     ))
