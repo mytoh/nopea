@@ -13,16 +13,19 @@
   (begin
 
     (define (go args)
-      (let ((name (caddr args)))
+      (let ((name (caddr args))
+            (paths (cdddr args)))
         (let* ((file-list (car (file->sexp-list
                                 (build-path (home-directory) ".nopea"))))
                (found (find (lambda (e) (string=? (car e) name))
-                            file-list))
+                        file-list))
                (dir (if found (cadr found)
                         #f)))
           (cond
-              (dir
-               (display dir))
+            (dir
+             (if (not (null? paths))
+               (display (apply build-path dir paths))
+               (display dir)))
             (else
                 (display "no such reference")
               (newline))))))
