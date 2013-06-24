@@ -52,7 +52,7 @@
                                 name dir)))))
 
     (define (display-ref name dir)
-      (format #t "~a -> ~a" name dir))
+      (format #t "~a -> ~a\n" name dir))
 
     (define (normalize path)
       (cond
