@@ -12,6 +12,7 @@
     (only (srfi :13)
           string-take-right
           string-trim-right)
+    (srfi :48)
     (loitsu file)
     )
 
@@ -24,7 +25,8 @@
         (call-with-output-file
             file
           (lambda (out)
-            (write lst out)))))
+            (write lst out)))
+        (display-ref name dir)))
 
     (define (make-ref-list file name dir)
       (let ((file-list (car (file->sexp-list file))))
@@ -48,6 +50,9 @@
           (else
               (save-ref-to-file nopea-file
                                 name dir)))))
+
+    (define (display-ref name dir)
+      (format "%s -> %s" name dir))
 
     (define (normalize path)
       (cond
