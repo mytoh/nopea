@@ -51,7 +51,7 @@
 
     (define (normalize path)
       (cond
-        ((string=? "/" (string-take-right path))
+        ((string=? "/" (string-take-right path 1))
          (string-trim-right path #\/))
         (else
             path)))
