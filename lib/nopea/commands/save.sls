@@ -10,7 +10,8 @@
     (only (srfi :1)
           any)
     (only (srfi :13)
-          string-take-right)
+          string-take-right
+          string-trim-right)
     (loitsu file)
     )
 
