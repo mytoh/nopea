@@ -1,7 +1,7 @@
 
 (library (nopea commands refs)
-  (export
-    refs)
+    (export
+      refs)
   (import
     (silta base)
     (srfi :48)
@@ -10,12 +10,11 @@
   (begin
 
     (define (refs)
-      (let ((file-list (car (file->sexp-list (build-path (home-directory) ".nopea")))  
-                       ))
+      (let ((file-list (car (file->sexp-list (build-path (home-directory) ".nopea")))))
         (for-each
-          (lambda (e)
-            (format #t "~a ~a\n"
-                    (car e) (cadr e)))
+            (lambda (e)
+              (format #t "~a\t-> ~a\n"
+                      (car e) (cadr e)))
           file-list)))
 
     ))
